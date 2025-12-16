@@ -1,0 +1,20 @@
+# Docker
+.env
+docker-compose.override.yml
+
+# Data directories
+*/html/
+*/data/
+*/logs/
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
