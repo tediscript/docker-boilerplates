@@ -4,10 +4,11 @@ This is a PostgreSQL 15 setup using Docker Compose.
 
 ## Usage
 
-1. (Optional) Modify the environment variables in `docker-compose.yml`:
-   - `POSTGRES_USER`: Database user (default: postgres)
-   - `POSTGRES_PASSWORD`: Database password
-   - `POSTGRES_DB`: Initial database to create
+1. **REQUIRED**: Change the placeholder password in `docker-compose.yml`:
+   - `POSTGRES_PASSWORD`: Replace CHANGE_ME_PASSWORD with your chosen password
+   - Optionally modify:
+     - `POSTGRES_USER`: Database user (default: postgres)
+     - `POSTGRES_DB`: Initial database to create
 
 2. Start the service:
    ```bash

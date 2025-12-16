@@ -4,7 +4,9 @@ This is a complete WordPress setup with MySQL database using Docker Compose.
 
 ## Usage
 
-1. (Optional) Modify the environment variables in `docker-compose.yml` to change passwords
+1. **REQUIRED**: Change the placeholder passwords in `docker-compose.yml`:
+   - Replace both instances of `CHANGE_ME_DB_PASSWORD` with your chosen password
+   - Replace `CHANGE_ME_ROOT_PASSWORD` with your MySQL root password
 
 2. Start the services:
    ```bash

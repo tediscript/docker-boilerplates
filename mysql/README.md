@@ -4,11 +4,12 @@ This is a MySQL 8.0 setup using Docker Compose.
 
 ## Usage
 
-1. (Optional) Modify the environment variables in `docker-compose.yml`:
-   - `MYSQL_ROOT_PASSWORD`: Root password for MySQL
-   - `MYSQL_DATABASE`: Initial database to create
-   - `MYSQL_USER`: Non-root user to create
-   - `MYSQL_PASSWORD`: Password for the non-root user
+1. **REQUIRED**: Change the placeholder passwords in `docker-compose.yml`:
+   - `MYSQL_ROOT_PASSWORD`: Root password for MySQL (replace CHANGE_ME_ROOT_PASSWORD)
+   - `MYSQL_PASSWORD`: Password for the non-root user (replace CHANGE_ME_USER_PASSWORD)
+   - Optionally modify:
+     - `MYSQL_DATABASE`: Initial database to create
+     - `MYSQL_USER`: Non-root user to create
 
 2. Start the service:
    ```bash

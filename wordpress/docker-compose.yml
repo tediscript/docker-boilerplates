@@ -7,7 +7,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_PASSWORD: CHANGE_ME_DB_PASSWORD
       WORDPRESS_DB_NAME: wordpress
     ports:
       - "8080:80"
@@ -23,10 +23,10 @@ services:
     image: mysql:8.0
     container_name: wordpress-db
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_ROOT_PASSWORD: CHANGE_ME_ROOT_PASSWORD
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_PASSWORD: CHANGE_ME_DB_PASSWORD
     volumes:
       - db-data:/var/lib/mysql
     restart: unless-stopped

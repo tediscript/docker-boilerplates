@@ -10,7 +10,7 @@ This is a basic Nginx setup using Docker Compose.
    echo "<h1>Hello from Nginx</h1>" > html/index.html
    ```
 
-2. (Optional) Create a custom `nginx.conf` file or remove the volume mount to use default configuration
+2. (Optional) Create a custom `nginx.conf` file and uncomment the volume mount in `docker-compose.yml`
 
 3. Start the service:
    ```bash

@@ -4,9 +4,10 @@ This is a MongoDB 7 setup using Docker Compose.
 
 ## Usage
 
-1. (Optional) Modify the environment variables in `docker-compose.yml`:
-   - `MONGO_INITDB_ROOT_USERNAME`: Root username (default: admin)
-   - `MONGO_INITDB_ROOT_PASSWORD`: Root password
+1. **REQUIRED**: Change the placeholder password in `docker-compose.yml`:
+   - `MONGO_INITDB_ROOT_PASSWORD`: Replace CHANGE_ME_PASSWORD with your chosen password
+   - Optionally modify:
+     - `MONGO_INITDB_ROOT_USERNAME`: Root username (default: admin)
 
 2. Start the service:
    ```bash
@@ -15,7 +16,7 @@ This is a MongoDB 7 setup using Docker Compose.
 
 3. Connect to MongoDB:
    ```bash
-   docker exec -it mongodb mongosh -u admin -p password
+   docker exec -it mongodb mongosh -u admin -p
    ```
 
 ## Stop the service
@@ -38,10 +39,10 @@ docker-compose down -v
 - Host: localhost
 - Port: 27017
 - Username: admin (or as configured)
-- Password: password (or as configured)
+- Password: (as configured)
 
 ## Connection String
 
 ```
-mongodb://admin:password@localhost:27017/
+mongodb://admin:YOUR_PASSWORD@localhost:27017/
 ```
