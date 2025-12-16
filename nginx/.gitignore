@@ -1,0 +1,13 @@
+# SSL certificates and private keys
+ssl/*
+!ssl/.gitkeep
+
+# Active configuration files (keep examples)
+conf.d/*.conf
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
