@@ -1,0 +1,18 @@
+---
+
+services:
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    platform: linux/amd64
+    restart: unless-stopped
+    ports:
+      - 80:80
+    environment:
+      MAX_EXECUTION_TIME: 36000
+      PMA_ARBITRARY: 1
+      PMA_USERCOOKIE_EXPIRE: 86400
+      UPLOAD_LIMIT: 2G
+      MEMORY_LIMIT: 4G
+    volumes:
+      - ./log:/var/log/apache2
